@@ -10,6 +10,7 @@ const connectDatabase = () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
+      dbName: "ecommerce",
     })
     .then((data) => {
       console.log(`Mongodb connected with server: ${data.connection.host}`);
